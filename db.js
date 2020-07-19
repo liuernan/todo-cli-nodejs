@@ -1,6 +1,6 @@
 const os = require('os');
 const path = require('path');
-const home = process.env.HOME || os.homedir()
+const home = process.env.HOME || os.homedir();
 const defaultPath = path.join(home, '.todos');
 const fs = require('fs');
 
