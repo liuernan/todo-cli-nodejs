@@ -1,24 +1,21 @@
-const { program } = require('commander');
+const os = require('os');
+const path = require('path');
+const fs = require('fs');
 
-program
-  .command('add <todoTitle>')
-  .description('add a new todo')
-  .action((source, destination) => {
-    console.log('add command called');
-  });
+const filePath = path.join(process.env.HOME || os.homedir(), '.todos.txt');
 
-program
-  .command('clear')
-  .description('clear all todos')
-  .action((source, destination) => {
-    console.log('clear command called');
-  });
+// fs.open(filePath, 'a+', (error)=>{
+//   console.log(error)
+// });
 
-program
-  .command('show')
-  .description('show all todos')
-  .action((source, destination) => {
-    console.log('show command called');
-  });
+module.exports.add = (todoTitle, done) => {
+  console.log('add called with params: ', todoTitle, done)
+}
 
-program.parse(process.argv);
+module.exports.clear = () => {
+  console.log('clear called');
+}
+
+module.exports.show = () => {
+  console.log('show called');
+}
