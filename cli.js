@@ -2,10 +2,10 @@ const {program} = require('commander');
 const apis = require('./index.js');
 
 program
-  .command('add <todoTitle> [done]')
+  .command('add <todoTitle> [status]')
   .description('add a new todo as undo, mark its status as done with another param [done]')
-  .action((todoTitle, done) => {
-    apis.add(todoTitle, done);
+  .action((todoTitle, status) => {
+    apis.add(todoTitle, status);
 
   });
 
