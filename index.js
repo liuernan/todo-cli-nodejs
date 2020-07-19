@@ -1,21 +1,12 @@
-const os = require('os');
-const path = require('path');
-const fs = require('fs');
-
-const filePath = path.join(process.env.HOME || os.homedir(), '.todos.txt');
-
-// fs.open(filePath, 'a+', (error)=>{
-//   console.log(error)
-// });
+const db = require('./db.js');
 
 module.exports.add = (todoTitle, done) => {
-  console.log('add called with params: ', todoTitle, done)
 }
 
 module.exports.clear = () => {
-  console.log('clear called');
 }
 
-module.exports.show = () => {
-  console.log('show called');
+module.exports.show = async () => {
+  const todoList = await db.read();
+  console.log(todoList)
 }
