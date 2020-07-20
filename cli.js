@@ -3,6 +3,9 @@
 const {program} = require('commander');
 const apis = require('./index.js');
 const inquirer = require('inquirer');
+const pkg = require('./package.json');
+
+program.version(pkg.version, '-v, --version', 'output the current version');
 
 program
   .command('add <todoTitle> [done]')
