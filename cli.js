@@ -73,7 +73,7 @@ showAllItem = (todoList) => {
         case '-1':
           break;
         case '-2':
-          addItem(todoList);
+          addItem();
           break;
         default:
           updateItem(todoList, answer.index);
@@ -82,7 +82,7 @@ showAllItem = (todoList) => {
     });
 };
 
-addItem = (todoList) => {
+addItem = () => {
   inquirer.prompt([
     {
       type: 'input',
@@ -131,7 +131,7 @@ updateItem = (todoList, index) => {
     });
 };
 
-quit = (todoList, index) => {
+quit = () => {
 };
 
 markAsDone = (todoList, index) => {
@@ -147,7 +147,17 @@ markAsUndo = (todoList, index) => {
 };
 
 updateTitle = (todoList, index) => {
-  //
+  inquirer.prompt([
+    {
+      type: 'input',
+      name: 'title',
+      message: "change this todo title as ?"
+    }
+  ]).then((answers) => {
+    const newTodoList = [...todoList];
+    newTodoList[index].title = answers.title;
+    overWrite(newTodoList);
+  });
 };
 
 deleteItem = (todoList, index) => {
