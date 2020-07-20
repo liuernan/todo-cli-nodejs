@@ -26,7 +26,7 @@ program
   });
 
 program
-  .command('show')
+  .command('show', { isDefault: true })
   .description('show all todos')
   .action(() => {
     apis.show().then(() => {
