@@ -32,7 +32,7 @@ program
   .action(() => {
     apis.show().then((todoList) => {
       if (0 === todoList.length) {
-        console.log('no todos yet, try "todo add" to add some.');
+        console.log('no todos yet, try "todo add" to add some, type "todo -h" to see how to use');
         return
       }
       showAllItem(todoList);
