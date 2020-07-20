@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "a CLI tool to show/add/delete/update a todoList in Terminal/cmd",
   "main": "index.js",
+  "files": [
+    "*.js"
+  ],
   "repository": "git@github.com:liuernan/todo-cli-nodejs.git",
   "author": "Jiawei <liujiaweidreamer@gmail.com>",
   "license": "MIT",
