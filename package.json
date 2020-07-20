@@ -6,6 +6,9 @@
   "files": [
     "*.js"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": "git@github.com:liuernan/todo-cli-nodejs.git",
   "author": "Jiawei <liujiaweidreamer@gmail.com>",
   "license": "MIT",
