@@ -22,6 +22,7 @@ const db = {
       });
     })
   },
+
   write(newTodoList, filePath = defaultPath) {
     newTodoList = JSON.stringify(newTodoList);
     return new Promise((resolve, reject) => {

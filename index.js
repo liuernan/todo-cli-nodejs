@@ -8,11 +8,14 @@ module.exports.add = async (todoTitle, status) => {
   await db.write(todoList)
 };
 
+module.exports.overWrite = async (todoList) => {
+  await db.write(todoList)
+};
+
 module.exports.clear = async () => {
   await db.write([])
 };
 
 module.exports.show = async () => {
-  const todoList = await db.read();
-  console.log(todoList)
+  return await db.read();
 };
