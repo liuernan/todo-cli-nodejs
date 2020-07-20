@@ -62,6 +62,7 @@ showAllItem = (todoList) => {
             name: 'add a new todo',
             value: '-2'
           },
+          new inquirer.Separator(),
           ...todoList.map((item, index) => {
             return {
               name: `[ ${'done' === item.status ? '✅' : '  '} ] ${index + 1} : ${item.title}`,
