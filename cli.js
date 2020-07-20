@@ -83,7 +83,19 @@ showAllItem = (todoList) => {
 };
 
 addItem = (todoList) => {
-  console.log('add method trigger');
+  inquirer.prompt([
+    {
+      type: 'input',
+      name: 'title',
+      message: "What's going to do ?"
+    }
+  ]).then((answers) => {
+    apis.add(answers.title, 'undo').then(() => {
+      console.log('successfully add a new todo!');
+    }, () => {
+      console.log('failed to add a new todo!');
+    });
+  });
 };
 
 updateItem = (todoList, index) => {
