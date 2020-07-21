@@ -1,6 +1,6 @@
 {
   "name": "todo-cli-nodejs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a CLI tool to show/add/delete/update a todoList in Terminal/cmd",
   "main": "index.js",
   "files": [
