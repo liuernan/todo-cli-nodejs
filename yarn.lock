@@ -132,9 +132,9 @@ is-fullwidth-code-point@^3.0.0:
   integrity sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==
 
 lodash@^4.17.16:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 mimic-fn@^2.1.0:
   version "2.1.0"
@@ -222,14 +222,6 @@ tmp@^0.0.33:
   integrity sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
   dependencies:
     os-tmpdir "~1.0.2"
-
-todo-cli-nodejs@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/todo-cli-nodejs/-/todo-cli-nodejs-0.0.1.tgz#4de2953334ea42d5e36c74183ebb7346d0c9345c"
-  integrity sha512-z3sueUEdo75FimpjrPOoHQoqRkqcrPe88IyFxS8X8N7XPS6DeEbAYlDO7mwo0fBrfmg/wooOzSkkMoodUOw5aA==
-  dependencies:
-    commander "^5.1.0"
-    inquirer "^7.3.2"
 
 tslib@^1.9.0:
   version "1.13.0"
